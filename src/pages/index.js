@@ -1,14 +1,18 @@
 import * as React from 'react';
-import {Col, Row} from 'react-bootstrap';
-
+import Landing from '../sections/Landing';
+import About from '../sections/About';
+import Services from '../sections/Services';
+import Skills from '../sections/Skills';
+import Portfolio from '../sections/Portfolio';
 class IndexPage extends React.Component {
   render() {
     return (
       <main>
-        <Row>
-          <Col>Col</Col>
-          <Col>Col</Col>
-        </Row>
+        <Landing />
+        <About />
+        <Services />
+        <Skills />
+        <Portfolio />
       </main>
     );
   }
