@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Zilla Slab";
+  src: url("../fonts/zilla-slab/ZillaSlab-Regular.ttf");
+}
+
+html {
+  font-family: "Zilla Slab";
+}
