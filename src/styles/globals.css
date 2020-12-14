@@ -4,6 +4,7 @@ body {
 }
 section {
   padding: 70px 0;
+  border-bottom: 1px solid #111;
 }
 h1, h2, h3 {
   font-family: "Zilla Slab";
@@ -18,7 +19,10 @@ h2 {
 h3 {
   font-size: 24px;
 }
-
+p{
+  font-size: 18px;
+  line-height: 1.5rem;
+}
 .mh-landing-subtitle {
   font-size: 24px;
 }

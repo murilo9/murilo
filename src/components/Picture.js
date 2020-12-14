@@ -14,7 +14,7 @@ class Picture extends React.Component {
 
   render() {
     return (
-      <div className="mh-picture" style={this.getStyle()}>
+      <div className="mh-picture" style={this.getStyle()} className={this.props.className}>
       </div>
     );
   }

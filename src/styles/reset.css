@@ -22,12 +22,15 @@ time, mark, audio, video {
 	font-size: 100%;
 	vertical-align: baseline;
 }
+p {
+	margin-bottom: 20px;
+}
 ul {
   display: inline-block;
 }
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
-  margin: 0;
+	display: inline-block;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,

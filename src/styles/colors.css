@@ -4,3 +4,18 @@
 .color-green, .color-green:hover {
   color: #66E782;
 }
+.color-light-gray {
+  color: #ddd;
+}
+.bkg-dark {
+  background-color: #1C2127;
+}
+.bkg-light {
+  background-color: #232A34;
+}
+.blue-title-border {
+  border-bottom: 2px solid #5DEEFF;
+}
+.green-title-border {
+  border-bottom: 2px solid #66E782;
+}
