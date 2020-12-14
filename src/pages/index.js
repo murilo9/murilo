@@ -10,12 +10,12 @@ class IndexPage extends React.Component {
   render() {
     return (
       <main>
-        <Header />
         <Landing />
         <About />
         <Services />
         <Skills />
         <Portfolio />
+        <Header />
         <Footer />
       </main>
     );

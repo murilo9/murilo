@@ -1,0 +1,16 @@
+header {
+  background-color: #232A34;
+  height: 48px;
+  font-size: 14px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  svg {
+    &.available {
+      color: lawngreen;
+    }
+    &.unavailable {
+      color: red;
+    }
+  }
+}

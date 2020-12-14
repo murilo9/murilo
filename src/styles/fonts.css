@@ -1,8 +1,14 @@
 @font-face {
   font-family: "Zilla Slab";
+  font-weight: 400;
   src: url("../fonts/zilla-slab/ZillaSlab-Regular.ttf");
+}
+@font-face {
+  font-family: "Zilla Slab";
+  font-weight: 700;
+  src: url("../fonts/zilla-slab/ZillaSlab-SemiBold.ttf");
 }
 
 html {
-  font-family: "Zilla Slab";
+  font-family: "Roboto", sans-serif;
 }
