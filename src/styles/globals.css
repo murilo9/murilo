@@ -23,6 +23,9 @@ p{
   font-size: 18px;
   line-height: 1.5rem;
 }
+.ta-center {
+  text-align: center;
+}
 .mh-landing-subtitle {
   font-size: 24px;
 }
