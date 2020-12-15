@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import * as React from 'react';
 import {Col, Container, Row} from 'react-bootstrap';
 import Picture from '../components/Picture';
@@ -12,7 +13,7 @@ const links = {
 class AboutSection extends React.Component {
   render() {
     return (
-      <section className="bkg-light">
+      <section className="bkg-dark-2" id="about">
         <Container>
           <h2 className="green-title-border">Sobre mim</h2>
           <Row className="mt-4">
@@ -26,7 +27,7 @@ class AboutSection extends React.Component {
               </h3>
               <p className="color-light-gray">
                 Tive o meu primeiro contato com desenvolvimento aos 11 anos com
-                linguagem C. Hoje, com 23 anos, sou apaixonado por frameworks
+                linguagem C. Hoje, com 24 anos, sou apaixonado por frameworks
                 JavaScript e estou buscando me especializar como Desenvolvedor
                 Fullstack JavaScript.
               </p>

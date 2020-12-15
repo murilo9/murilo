@@ -8,22 +8,22 @@ class Nav extends React.Component {
       <nav>
         <ul className="d-flex">
           <li>
-            <a href="#" className="color-blue mr-2">
+            <a href="#about" className="color-blue mr-2">
               <strong>Sobre mim</strong>
             </a>
           </li>
           <li>
-            <a href="#" className="color-blue mr-2">
+            <a href="#services" className="color-blue mr-2">
               <strong>Serviços</strong>
             </a>
           </li>
           <li>
-            <a href="#" className="color-blue mr-2">
+            <a href="#skills" className="color-blue mr-2">
               <strong>Habilidades</strong>
             </a>
           </li>
           <li>
-            <a href="#" className="color-blue mr-2">
+            <a href="#portfolio" className="color-blue mr-2">
               <strong>Portfólio</strong>
             </a>
           </li>
