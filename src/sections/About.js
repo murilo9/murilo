@@ -21,7 +21,7 @@ class AboutSection extends React.Component {
               <Picture src="coder.jpg" className="mb-6"
                 size="260px" color="blue" top="20px" left="-20px"/>
               <Picture src="robotica.jpg" className="ml-4"
-                size="260px" color="green" top="-20px" left="-20px"/>
+                size="260px" color="green" top="-20px" left="20px"/>
             </Col>
             <Col sm={7}>
               <h3 className="mb-3">🖥️
