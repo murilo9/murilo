@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Container} from 'react-bootstrap';
+import {Col, Container, Row} from 'react-bootstrap';
 import '../styles/sections/Skills.scss';
 
 // flag svgs by Freepik
@@ -23,6 +23,33 @@ class SkillsSection extends React.Component {
             <p className="mt-2 mh-skills-misc">
             Vuex | Redux | MongoDB | MySQL | Mongoose | Firebase | Webpack
             </p>
+          </div>
+          <div className="d-flex flex-column align-items-center">
+            <h3 className="mt-3 color-green">Idiomas</h3>
+            <Row className="mt-3">
+              <Col>
+                <Row>
+                  <Col>
+                    <img src='english.svg' className="mh-flag"/>
+                  </Col>
+                  <Col>
+                    <p className="color-blue">Inglês</p>
+                    <p className="color-light-gray">Avançado</p>
+                  </Col>
+                </Row>
+              </Col>
+              <Col>
+                <Row>
+                  <Col>
+                    <img src='francais.svg' className="mh-flag"/>
+                  </Col>
+                  <Col>
+                    <p className="color-blue">Francês</p>
+                    <p className="color-light-gray">Básico</p>
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
           </div>
         </Container>
       </section>
