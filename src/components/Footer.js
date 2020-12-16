@@ -11,7 +11,7 @@ class Footer extends React.Component {
             Copyright 2020 - Murilo Henrique
         </span>
         <span>
-            Flat icons by <a href='https://www.flaticon.com/authors/phatplus'>phatplus</a> and <a href="https://www.flaticon.com/br/autores/freepik">Freepik</a>
+            Flat icons by <a href='https://www.flaticon.com/authors/phatplus'>phatplus</a>, <a href="https://www.flaticon.com/br/autores/freepik">Freepik</a> and <a href="https://github.com/devicons/devicon">devicon</a>
         </span>
       </footer>
     );

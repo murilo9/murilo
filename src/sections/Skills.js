@@ -1,56 +1,59 @@
+/* eslint-disable max-len */
 import * as React from 'react';
 import {Col, Container, Row} from 'react-bootstrap';
 import '../styles/sections/Skills.scss';
 
-// flag svgs by Freepik
+const skills = [
+  ['html5.svg', 'html5'], ['css3.svg', 'CSS3'], ['javascript.svg', 'Javascript'],
+  ['vue.svg', 'Vue.js'], ['react.svg', 'React.js'],
+  ['angular.svg', 'Angular'], ['node.svg', 'Node.js'], ['nuxt.svg', 'Nuxt.js'],
+  ['typescript.svg', 'Typescript'], ['redux.svg', 'Redux'], ['sass.svg', 'Sass'],
+  ['jquery.svg', 'jQuery'],
+  ['mongodb.svg', 'MongoDB'], ['mysql.svg', 'MySQL'], ['firebase.svg', 'Firebase'],
+  ['heroku.svg', 'Heroku'], ['webpack.svg', 'Webpack'], ['npm.svg', 'NPM Scripts'],
+  ['gatsby.svg', 'Gatsby'], ['bootstrap.svg', 'Bootstrap'], ['materialui.svg', 'Material UI'],
+];
 
 class SkillsSection extends React.Component {
   render() {
+    const skillsList = [];
+    skills.forEach((skill) => {
+      skillsList.push(
+          <div className="mh-skill ml-2 mb-2">
+            <img src={skill[0]} alt={skill[1]} title={skill[1]} />
+          </div>,
+      );
+    });
     return (
       <section className="bkg-dark-2" id="skills">
         <Container className="d-flex flex-column align-items-center">
           <h2 className="green-title-border mb-0">Habilidades</h2>
-          <div className="mt-3 d-flex flex-column align-items-center">
-            <h3 className="mt-3 color-green">Principais</h3>
-            <p className="mt-2 mh-skills-major">
-            HTML | CSS | Javascript | Vue | React
-            </p>
-            <h3 className="mt-3 color-green">Secundárias</h3>
-            <p className="mt-2 mh-skills-minor">
-            Angular | Node | Nuxt | Typescript
-            </p>
-            <h3 className="mt-3 color-green">Outras</h3>
-            <p className="mt-2 mh-skills-misc">
-            Vuex | Redux | MongoDB | MySQL | Mongoose | Firebase | Webpack
-            </p>
+          <div className="mh-skills-container mt-6 d-flex flex-wrap justify-content-center">
+            { skillsList }
           </div>
-          <div className="d-flex flex-column align-items-center">
-            <h3 className="mt-3 color-green">Idiomas</h3>
-            <Row className="mt-3">
-              <Col>
-                <Row>
-                  <Col>
-                    <img src='english.svg' className="mh-flag"/>
-                  </Col>
-                  <Col>
-                    <p className="color-blue">Inglês</p>
-                    <p className="color-light-gray">Avançado</p>
-                  </Col>
-                </Row>
-              </Col>
-              <Col>
-                <Row>
-                  <Col>
-                    <img src='francais.svg' className="mh-flag"/>
-                  </Col>
-                  <Col>
-                    <p className="color-blue">Francês</p>
-                    <p className="color-light-gray">Básico</p>
-                  </Col>
-                </Row>
-              </Col>
-            </Row>
-          </div>
+          <Row className="mt-3 w-100 mh-languages" noGutters>
+            <Col className="d-flex align-items-center">
+              <img src='brasil.svg' className="mh-flag mr-2"/>
+              <div>
+                <p className="color-blue">Português</p>
+                <p className="color-light-gray">Nativo</p>
+              </div>
+            </Col>
+            <Col className="d-flex align-items-center">
+              <img src='english.svg' className="mh-flag mr-2"/>
+              <div>
+                <p className="color-blue">Inglês</p>
+                <p className="color-light-gray">Avançado</p>
+              </div>
+            </Col>
+            <Col className="d-flex align-items-center">
+              <img src='francais.svg' className="mh-flag mr-2"/>
+              <div>
+                <p className="color-blue">Francês</p>
+                <p className="color-light-gray">Básico</p>
+              </div>
+            </Col>
+          </Row>
         </Container>
       </section>
     );
