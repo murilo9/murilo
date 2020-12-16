@@ -66,7 +66,7 @@ class PortfolioCard extends React.Component {
   null;
     // Render
     return (
-      <div className="mh-portfolio-card mt-6">
+      <div className="mh-portfolio-card mt-7">
         <div className="pt-3 pl-3 pr-3 pb-3">
           <h3 className="green-title-border">{this.props.title}</h3>
           <div className="mt-2">

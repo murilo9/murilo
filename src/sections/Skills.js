@@ -7,7 +7,7 @@ import '../styles/sections/Skills.scss';
 class SkillsSection extends React.Component {
   render() {
     return (
-      <section className="bkg-dark-2">
+      <section className="bkg-dark-2" id="skills">
         <Container className="d-flex flex-column align-items-center">
           <h2 className="green-title-border mb-0">Habilidades</h2>
           <div className="mt-3 d-flex flex-column align-items-center">
