@@ -13,4 +13,5 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
   ],
+  pathPrefix: '/personal-website-v2',
 };
