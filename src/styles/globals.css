@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #1C2127;
   color: #fff;
@@ -28,4 +31,20 @@ p{
 }
 .mh-landing-subtitle {
   font-size: 24px;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 8px;
+  border-radius: 4px;
+  background: #bbb;
+}
+
+::-webkit-scrollbar-track {
+  background: #444;
 }
