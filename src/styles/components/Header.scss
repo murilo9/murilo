@@ -6,6 +6,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 15;
   svg {
     &.available {
       color: lawngreen;
