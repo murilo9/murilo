@@ -3,10 +3,6 @@ import * as React from 'react';
 import {Col, Container, Row} from 'react-bootstrap';
 import '../styles/sections/Services.scss';
 
-/**
- * icons: https://www.flaticon.com/authors/phatplus
- */
-
 class ServicesSection extends React.Component {
   render() {
     return (
