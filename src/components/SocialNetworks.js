@@ -7,7 +7,7 @@ import '../styles/components/SocialNetworks.scss';
 class SocialNetworks extends React.Component {
   render() {
     return (
-      <div className="mh-social-networks mt-4">
+      <div className="mh-social-networks mt-4" id="social-networks">
         <a href="#" className="mr-2">
           <FontAwesomeIcon icon={faLinkedin} />
         </a>

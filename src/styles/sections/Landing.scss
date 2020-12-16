@@ -1,6 +1,20 @@
+@keyframes image {
+  from {opacity: 0; margin-left: -80px;}
+  to {opacity: 1; margin-left: 0;}
+}
 section:first-of-type{
   height: 100vh;
 }
-.mh-landing-text {
-  border-bottom: 2px solid #000;
+#landing-social-networks{
+  border-top: 2px solid transparent;  /* Vai virar black após o timeout */
+  transition: border-top 1s;
+}
+.mh-landing-subtitle {
+  color: transparent;   /* Vai virar blue após o timeout */
+  transition: color 1s;
+}
+.mh-landing {
+  .mh-picture {
+    animation: image 1s linear;
+  }
 }

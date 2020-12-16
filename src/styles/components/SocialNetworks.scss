@@ -1,7 +1,8 @@
 .mh-social-networks {
+  color: transparent;
+  transition: color 2s;
   a {
     font-size: 32px;
-    color: #fff;
-    transition: font-size 2s;
+    color: inherit;
   }
 }
