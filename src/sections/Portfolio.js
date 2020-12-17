@@ -26,7 +26,9 @@ const projects = [
         funções do Google Planilhas escritas em Google App Script, e os serviços do Firebase.
       </p>
     </React.Fragment>,
-    techs: 'Vue | Vuex | Element | Google App Script | Firebase',
+    techs: [
+      'Vue.js', 'Vuex', 'Element', 'Google App Script', 'Firebase',
+    ],
     pictures: [
       'yousendr-message-1.png',
       'yousendr-message-2.png',
@@ -49,7 +51,7 @@ const projects = [
       são hospedadas no serviço de store do Firebase.
     </p>,
     techs: [
-      'React | Redux | Bootstrap | Node | MongoDB | Mongoose | Heroku | Firebase',
+      'React.js', 'Redux', 'Bootstrap', 'Node.js', 'MongoDB', 'Mongoose', 'Heroku', 'Firebase',
     ],
     pictures: [
       'mydria-front.png',
@@ -73,7 +75,9 @@ const projects = [
       serverless, portanto o site se comunica diretamente com os serviços de autenticação,
       hospedagem e storage do Firebase.
     </p>,
-    techs: 'Vue | Nuxt | Firebase | Material UI',
+    techs: [
+      'Vue.js', 'Nuxt', 'Firebase', 'Material UI',
+    ],
     pictures: [
       'jevang-front.png',
       'jevang-mobile.png',

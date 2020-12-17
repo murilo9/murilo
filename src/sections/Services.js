@@ -6,7 +6,7 @@ import '../styles/sections/Services.scss';
 class ServicesSection extends React.Component {
   render() {
     return (
-      <section id="services">
+      <section id="services" className="mh-services">
         <Container>
           <div className="d-flex justify-content-center">
             <h2 className="green-title-border">Serviços</h2>
@@ -38,8 +38,8 @@ class ServicesSection extends React.Component {
                 className="mh-flat-icon mb-3"></object>
               <h3 className="mb-2">Landing Pages e Sites</h3>
               <p className="color-light-gray">
-                Páginas feitas usando Nuxtjs visando a melhor performance e
-                bons resultados em motores de busca (SEO).
+                Páginas para landing pages, blogs e sites institucionais feitas usando
+                Nuxtjs visando a melhor performance e bons resultados em motores de busca (SEO).
               </p>
             </Col>
           </Row>

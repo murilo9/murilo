@@ -2,7 +2,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable max-len */
 import * as React from 'react';
-import {Carousel} from 'react-bootstrap';
+import {Badge, Carousel} from 'react-bootstrap';
 import '../styles/components/PortfolioCard.scss';
 
 /**
@@ -62,8 +62,16 @@ class PortfolioCard extends React.Component {
       <a href={this.props.links.site} className="color-green" target="_blank">
         Site
       </a>
-    </p> :
-  null;
+    </p> : null;
+    // Set techs badges:
+    const techs = [];
+    this.props.techs.forEach((tech) => {
+      techs.push(
+          <React.Fragment>
+            <Badge variant="info">{tech}</Badge>{' '}
+          </React.Fragment>,
+      );
+    });
     // Render
     return (
       <div className="mh-portfolio-card mt-7">
@@ -72,7 +80,7 @@ class PortfolioCard extends React.Component {
           <div className="mt-2">
             {this.props.description}
             <p className="color-light-gray mt-2">
-            Tecnologias: {this.props.techs}
+            Tecnologias: {techs}
             </p>
           </div>
           <div className="mt-3">
