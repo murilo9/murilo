@@ -76,7 +76,7 @@ const projects = [
       hospedagem e storage do Firebase.
     </p>,
     techs: [
-      'Vue.js', 'Nuxt', 'Firebase', 'Material UI',
+      'Vue.js', 'Nuxt.js', 'Firebase', 'Material UI',
     ],
     pictures: [
       'jevang-front.png',
