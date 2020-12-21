@@ -13,6 +13,17 @@ const links = {
 };
 
 class AboutSection extends React.Component {
+  constructor() {
+    super();
+    this.state ={
+      renderPictures: false,
+    };
+  }
+
+  componentDidMount() {
+    this.setState({renderPictures: true});
+  }
+
   render() {
     return (
       <section className="mh-about bkg-dark-2" id="about">
@@ -22,10 +33,16 @@ class AboutSection extends React.Component {
           </div>
           <Row className="mt-2">
             <Col md={12} lg={4} className="d-flex d-lg-block justify-content-center">
-              <Picture src="coder.jpg"
-                size={getPictureSize(window)} color="blue" top="12px" left="-12px"/>
-              <Picture src="robotica.jpg" className="ml-4 d-none d-md-block"
-                size={getPictureSize(window)} color="green" top="-12px" left="12px"/>
+              {
+                this.state.renderPictures ?
+                <React.Fragment>
+                  <Picture src="coder.jpg"
+                    size={getPictureSize(window)} color="blue" top="12px" left="-12px"/>
+                  <Picture src="robotica.jpg" className="ml-4 d-none d-md-block"
+                    size={getPictureSize(window)} color="green" top="-12px" left="12px"/>
+                </React.Fragment> :
+                null
+              }
             </Col>
             <Col md={12} lg={8}>
               <Row>

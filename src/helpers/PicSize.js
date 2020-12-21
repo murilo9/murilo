@@ -1,5 +1,6 @@
 const getPictureSize = (window) => {
-  return window.innerWidth > 768 ? '260px' : '180px';
+  console.log(window.innerWidth);
+  return window.innerWidth > 800 ? '260px' : '180px';
 };
 
 export default getPictureSize;

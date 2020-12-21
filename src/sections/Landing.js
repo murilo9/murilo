@@ -13,6 +13,7 @@ class LandingSection extends React.Component {
     super(props);
     this.state = {
       title: '',
+      renderPictures: false,
     };
   }
 
@@ -40,6 +41,9 @@ class LandingSection extends React.Component {
 
   componentDidMount() {
     setTimeout(() => this.writeTitle(this), 1000);
+    this.setState({
+      renderPictures: true,
+    });
   }
 
   render() {
@@ -48,8 +52,12 @@ class LandingSection extends React.Component {
         <Container>
           <Row noGutters>
             <Col sm={4} className="d-flex justify-content-center align-items-end mt-5 mt-sm-0">
-              <Picture src="murilo.png" size={getPictureSize(window)} id="landing-img"
-                color="green" top="12px" left="-12px" className="mb-2" />
+              {
+                this.state.renderPictures ?
+                <Picture src="murilo.png" size={getPictureSize(window)} id="landing-img"
+                  color="green" top="12px" left="-12px" className="mb-2" /> :
+                null
+              }
             </Col>
             <Col md={8} lg={7} className="mh-landing-text d-flex flex-column justify-content-end mt-5 mt-sm-5 pb-4 pb-lg-5">
               <h1 className="mh-landing-title">{this.state.title}</h1>
