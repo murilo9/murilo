@@ -16,16 +16,16 @@ class SocialNetworks extends React.Component {
   render() {
     return (
       <div className="mh-social-networks mt-4" id="social-networks">
-        <a href={links.linkedin} className="mr-2" target="_blank">
+        <a href={links.linkedin} className="mr-3" target="_blank">
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
-        <a href={links.github} className="mr-2" target="_blank">
+        <a href={links.github} className="mr-3" target="_blank">
           <FontAwesomeIcon icon={faGithub} />
         </a>
-        <a href={links.whatsapp} className="mr-2" target="_blank">
+        <a href={links.whatsapp} className="mr-3" target="_blank">
           <FontAwesomeIcon icon={faWhatsapp} />
         </a>
-        <a href={links.email} className="mr-2" target="_blank">
+        <a href={links.email} className="mr-3" target="_blank">
           <FontAwesomeIcon icon={faEnvelope} />
         </a>
       </div>

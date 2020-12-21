@@ -111,7 +111,7 @@ class PortfolioSection extends React.Component {
       <section id="portfolio">
         <Container>
           <div className="d-flex justify-content-center">
-            <h2 className="green-title-border">Portfólio</h2>
+            <h2 className="green-title-border mb-2">Portfólio</h2>
           </div>
           { this.renderPortfolioCards() }
         </Container>

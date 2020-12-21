@@ -74,10 +74,10 @@ class PortfolioCard extends React.Component {
     });
     // Render
     return (
-      <div className="mh-portfolio-card mt-7">
-        <div className="pt-3 pl-3 pr-3 pb-3">
-          <h3 className="green-title-border">{this.props.title}</h3>
-          <div className="mt-2">
+      <div className="mh-portfolio-card mt-5">
+        <div className="pt-4 pl-4 pr-4 pb-4">
+          <h3 className="green-title-border mb-4">{this.props.title}</h3>
+          <div>
             {this.props.description}
             <p className="color-light-gray mt-2">
             Tecnologias: {techs}

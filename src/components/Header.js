@@ -16,7 +16,7 @@ class Header extends React.Component {
             </Col>
             <Col className="d-flex justify-content-end">
               <FontAwesomeIcon icon={faCircle} className="available"/>
-              <span className="ml-1">
+              <span className="ml-2">
                 Disponível para novos projetos
               </span>
             </Col>

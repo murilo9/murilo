@@ -27,27 +27,27 @@ class SkillsSection extends React.Component {
     return (
       <section className="bkg-dark-2" id="skills">
         <Container className="d-flex flex-column align-items-center">
-          <h2 className="green-title-border mb-0">Habilidades</h2>
-          <div className="mh-skills-container mt-6 d-flex flex-wrap justify-content-center">
+          <h2 className="green-title-border mb-5">Habilidades</h2>
+          <div className="mh-skills-container mt-2 mb-5 d-flex flex-wrap justify-content-center">
             { skillsList }
           </div>
-          <Row className="mt-3 w-100 mh-languages" noGutters>
-            <Col className="d-flex align-items-center">
-              <img src='brasil.svg' className="mh-flag mr-2"/>
+          <Row className="w-100 mh-languages" noGutters>
+            <Col className="d-flex justify-content-center align-items-center">
+              <img src='brasil.svg' className="mh-flag mr-4"/>
               <div>
                 <p className="color-blue">Português</p>
                 <p className="color-light-gray">Nativo</p>
               </div>
             </Col>
-            <Col className="d-flex align-items-center">
-              <img src='english.svg' className="mh-flag mr-2"/>
+            <Col className="d-flex justify-content-center align-items-center">
+              <img src='english.svg' className="mh-flag mr-4"/>
               <div>
                 <p className="color-blue">Inglês</p>
                 <p className="color-light-gray">Avançado</p>
               </div>
             </Col>
-            <Col className="d-flex align-items-center">
-              <img src='francais.svg' className="mh-flag mr-2"/>
+            <Col className="d-flex justify-content-center align-items-center">
+              <img src='francais.svg' className="mh-flag mr-4"/>
               <div>
                 <p className="color-blue">Francês</p>
                 <p className="color-light-gray">Básico</p>

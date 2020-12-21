@@ -50,9 +50,9 @@ class LandingSection extends React.Component {
               <Picture src="murilo.png" size="260px" id="landing-img"
                 color="green" top="20px" left="-20px" className="mb-2" />
             </Col>
-            <Col sm={7} className="mh-landing-text d-flex flex-column justify-content-end pb-4">
+            <Col sm={7} className="mh-landing-text d-flex flex-column justify-content-end pb-5">
               <h1 className="landing-title">{this.state.title}</h1>
-              <p className="mt-3 mh-landing-subtitle" id="landing-subtitle">
+              <p className="mt-4 mh-landing-subtitle" id="landing-subtitle">
                 Desenvolvedor Javascript Fullstack
               </p>
             </Col>

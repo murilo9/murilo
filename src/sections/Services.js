@@ -9,9 +9,9 @@ class ServicesSection extends React.Component {
       <section id="services" className="mh-services">
         <Container>
           <div className="d-flex justify-content-center">
-            <h2 className="green-title-border">Serviços</h2>
+            <h2 className="green-title-border mb-5">Serviços</h2>
           </div>
-          <Row className="mt-4">
+          <Row className="mt-2">
             <Col className="d-flex flex-column align-items-center">
               <object type="image/svg+xml" data="computer.svg"
                 className="mh-flat-icon mb-3"></object>

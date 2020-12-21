@@ -2,6 +2,7 @@
 import * as React from 'react';
 import {Col, Container, Row} from 'react-bootstrap';
 import Picture from '../components/Picture';
+import '../styles/sections/About.scss';
 
 const links = {
   utfpr: 'http://www.utfpr.edu.br/',
@@ -13,18 +14,18 @@ const links = {
 class AboutSection extends React.Component {
   render() {
     return (
-      <section className="bkg-dark-2" id="about">
+      <section className="mh-about bkg-dark-2" id="about">
         <Container>
-          <h2 className="green-title-border">Sobre mim</h2>
-          <Row className="mt-4">
+          <h2 className="green-title-border mb-5">Sobre mim</h2>
+          <Row className="mt-2">
             <Col sm={5}>
-              <Picture src="coder.jpg" className="mb-6"
+              <Picture src="coder.jpg"
                 size="260px" color="blue" top="20px" left="-20px"/>
               <Picture src="robotica.jpg" className="ml-4"
                 size="260px" color="green" top="-20px" left="20px"/>
             </Col>
             <Col sm={7}>
-              <h3 className="mb-3">🖥️
+              <h3 className="mb-4">🖥️
                 <span className="ml-1">Como tudo começou</span>
               </h3>
               <p className="color-light-gray">
@@ -33,22 +34,19 @@ class AboutSection extends React.Component {
                 JavaScript e estou buscando me especializar como Desenvolvedor
                 Fullstack JavaScript.
               </p>
-              <h3 className="mb-3 mt-3">🎓
+              <h3 className="mb-4 mt-4">🎓
                 <span className="ml-1">Formação</span>
               </h3>
               <p className="color-light-gray">
                 Cursei o ensino médio técnico em eletrônica
                 na <a href={links.utfpr} className="color-blue" target="_blank">
                   UTFPR
-                </a>.
-              </p>
-              <p className="color-light-gray">
-                Hoje sou formado em Análise e Desenvolvimento de Sistemas
+                </a>. Hoje sou formado em Análise e Desenvolvimento de Sistemas
                 pela <a href={links.positivo} className="color-blue" target="_blank">
                   Universidade Positivo.
                 </a>
               </p>
-              <h3 className="mb-3 mt-3">💼
+              <h3 className="mb-4 mt-4">💼
                 <span className="ml-1">Experiência profissional</span>
               </h3>
               <p className="color-light-gray">
@@ -59,7 +57,7 @@ class AboutSection extends React.Component {
                 YouSendr</a> - utilizando MVC, webpack, VueJS, Vuetify e Element no
                 front-end e Google Apps Script no back-end.
               </p>
-              <h3 className="mb-3 mt-3">🎨
+              <h3 className="mb-4 mt-4">🎨
                 <span className="ml-1">O que gosto de fazer</span>
               </h3>
               <p className="color-light-gray">
