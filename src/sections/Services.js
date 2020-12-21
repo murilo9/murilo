@@ -12,7 +12,7 @@ class ServicesSection extends React.Component {
             <h2 className="green-title-border mb-5">Serviços</h2>
           </div>
           <Row className="mt-2">
-            <Col className="d-flex flex-column align-items-center">
+            <Col sm={12} md={4} className="d-flex flex-column align-items-center mb-5 mb-md-0">
               <object type="image/svg+xml" data="computer.svg"
                 className="mh-flat-icon mb-3"></object>
 
@@ -23,7 +23,7 @@ class ServicesSection extends React.Component {
                 (Firebase, Heroku).
               </p>
             </Col>
-            <Col className="d-flex flex-column align-items-center">
+            <Col sm={12} md={4} className="d-flex flex-column align-items-center mb-5 mb-md-0">
               <object type="image/svg+xml" data="worldwide.svg"
                 className="mh-flat-icon mb-3"></object>
               <h3 className="mb-2">APIs REST</h3>
@@ -33,7 +33,7 @@ class ServicesSection extends React.Component {
                 e seus respectivos ORMs (Sequelize, Mongoose).
               </p>
             </Col>
-            <Col className="d-flex flex-column align-items-center">
+            <Col sm={12} md={4} className="d-flex flex-column align-items-center mb-md-0">
               <object type="image/svg+xml" data="online.svg"
                 className="mh-flat-icon mb-3"></object>
               <h3 className="mb-2">Landing Pages e Sites</h3>

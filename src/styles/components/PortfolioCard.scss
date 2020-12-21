@@ -17,3 +17,8 @@
     display: flex;
   }
 }
+@media(max-width: 425px){
+  .carousel-item{
+    height: 400px;
+  }
+}

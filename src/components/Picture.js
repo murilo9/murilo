@@ -36,7 +36,7 @@ class Picture extends React.Component {
   render() {
     return (
       <div style={this.getContainterStyle()}
-        className={'mh-picture ' + this.props.className}>
+        className={'mh-picture ' + (this.props.className || '')}>
         <div style={this.getSquareStyle()}></div>
         <div style={this.getImgStyle()} ></div>
       </div>

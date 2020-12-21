@@ -3,6 +3,7 @@ import * as React from 'react';
 import {Col, Container, Row} from 'react-bootstrap';
 import Picture from '../components/Picture';
 import SocialNetworks from '../components/SocialNetworks';
+import getPictureSize from '../helpers/PicSize';
 import '../styles/sections/Landing.scss';
 
 const landingTitle = 'Murilo Henrique, prazer ;)';
@@ -46,18 +47,19 @@ class LandingSection extends React.Component {
       <section className="d-flex align-items-center pt-0 pb-0 mh-landing">
         <Container>
           <Row noGutters>
-            <Col sm={4} className="d-flex justify-content-center">
-              <Picture src="murilo.png" size="260px" id="landing-img"
-                color="green" top="20px" left="-20px" className="mb-2" />
+            <Col sm={4} className="d-flex justify-content-center align-items-end mt-5 mt-sm-0">
+              <Picture src="murilo.png" size={getPictureSize(window)} id="landing-img"
+                color="green" top="12px" left="-12px" className="mb-2" />
             </Col>
-            <Col sm={7} className="mh-landing-text d-flex flex-column justify-content-end pb-5">
-              <h1 className="landing-title">{this.state.title}</h1>
-              <p className="mt-4 mh-landing-subtitle" id="landing-subtitle">
+            <Col md={8} lg={7} className="mh-landing-text d-flex flex-column justify-content-end mt-5 mt-sm-5 pb-4 pb-lg-5">
+              <h1 className="mh-landing-title">{this.state.title}</h1>
+              <p className="mt-3 mh-landing-subtitle" id="landing-subtitle">
                 Desenvolvedor Javascript Fullstack
               </p>
             </Col>
             <Col sm={4}></Col>
-            <Col sm={7} id="landing-social-networks" className="d-flex justify-content-center">
+            <Col md={8} lg={7} id="landing-social-networks"
+              className="d-flex justify-content-center">
               <SocialNetworks />
             </Col>
           </Row>

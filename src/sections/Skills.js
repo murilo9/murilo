@@ -28,25 +28,30 @@ class SkillsSection extends React.Component {
       <section className="bkg-dark-2" id="skills">
         <Container className="d-flex flex-column align-items-center">
           <h2 className="green-title-border mb-5">Habilidades</h2>
-          <div className="mh-skills-container mt-2 mb-5 d-flex flex-wrap justify-content-center">
-            { skillsList }
-          </div>
-          <Row className="w-100 mh-languages" noGutters>
-            <Col className="d-flex justify-content-center align-items-center">
+          <Row className="justify-content-center mb-4 mb-lg-5">
+            <Col sm={12} md={10} lg={8} className="d-flex flex-wrap justify-content-center">
+              { skillsList }
+            </Col>
+          </Row>
+          <Row className="w-100 mh-languages justify-content-center" noGutters>
+            <Col sm={12} md={4} lg={3}
+              className="d-flex justify-content-start justify-content-md-center align-items-center pl-5 mt-4">
               <img src='brasil.svg' className="mh-flag mr-4"/>
               <div>
                 <p className="color-blue">Português</p>
                 <p className="color-light-gray">Nativo</p>
               </div>
             </Col>
-            <Col className="d-flex justify-content-center align-items-center">
+            <Col sm={12} md={4} lg={3}
+              className="d-flex justify-content-start justify-content-md-center align-items-center pl-5 mt-4">
               <img src='english.svg' className="mh-flag mr-4"/>
               <div>
                 <p className="color-blue">Inglês</p>
                 <p className="color-light-gray">Avançado</p>
               </div>
             </Col>
-            <Col className="d-flex justify-content-center align-items-center">
+            <Col sm={12} md={4} lg={3}
+              className="d-flex justify-content-start justify-content-md-center align-items-center pl-5 mt-4">
               <img src='francais.svg' className="mh-flag mr-4"/>
               <div>
                 <p className="color-blue">Francês</p>

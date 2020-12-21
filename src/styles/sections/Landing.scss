@@ -18,3 +18,8 @@ section:first-of-type{
     animation: image 1s linear;
   }
 }
+@media (max-width: 425px){
+  .mh-landing-subtitle, .mh-landing-title {
+    text-align: center;
+  }
+}
