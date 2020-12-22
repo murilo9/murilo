@@ -7,7 +7,7 @@ class Footer extends React.Component {
   render() {
     return (
       <footer className="bkg-dark-2">
-        <Row className="justify-content-between pl-3 pt-2 pt-md-3 pb-2 pt-md-3 pr-3">
+        <Row className="justify-content-between pl-3 pt-2 pt-md-3 pb-2 pt-md-3 pr-3" noGutters>
           <Col sm={12} md={6} className="d-flex justify-content-center justify-content-md-start">
             <span>
             Flat icons by <a href='https://www.flaticon.com/authors/phatplus'>phatplus</a>, <a href="https://www.flaticon.com/br/autores/freepik">Freepik</a> and <a href="https://github.com/devicons/devicon">devicon</a>
