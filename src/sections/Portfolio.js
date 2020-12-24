@@ -72,11 +72,11 @@ const projects = [
       Nuxt utilizando o framework Vue Material. Design feito por mim. O site possui
       um painel de administrador com layout padrão do Material Design. Os usuários podem
       enviar mensagens que são visualizadas pelo administrador no painel. O back-end é
-      serverless, portanto o site se comunica diretamente com os serviços de autenticação,
-      hospedagem e storage do Firebase.
+      serverless, portanto o site se comunica diretamente com os serviços de autenticação
+      e storage do Firebase, e o hosting é feito no Heroku.
     </p>,
     techs: [
-      'Vue.js', 'Nuxt.js', 'Firebase', 'Material UI',
+      'Vue.js', 'Nuxt.js', 'Firebase', 'Heroku', 'Material UI',
     ],
     pictures: [
       'jevang-front.png',
