@@ -84,7 +84,7 @@ const projects = [
       'jevang-panel-mobile.png',
     ],
     links: {
-      demo: 'https://jevang-test.web.app/',
+      demo: 'https://jevang-test.herokuapp.com/',
     },
   },
 ];
