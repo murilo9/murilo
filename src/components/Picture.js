@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable max-len */
 import * as React from 'react';
 
@@ -10,11 +11,15 @@ class Picture extends React.Component {
     };
   }
 
+  getSize() {
+    return window.innerWidth > 768 ? '260px' : '200px';
+  }
+
   getSquareStyle() {
     return {
       border: `2px solid ${this.props.color === 'blue' ? '#5DEEFF' : '#66E782'}`,
-      width: '100%',
-      height: '100%',
+      width: this.getSize(),
+      height: this.getSize(),
       position: 'absolute',
       left: this.props.left || '0',
       right: this.props.right || '0',
@@ -25,10 +30,9 @@ class Picture extends React.Component {
 
   getImgStyle() {
     return {
-      backgroundImage: `url(${this.props.src})`,
-      backgroundSize: 'cover',
-      width: '100%',
-      paddingTop: '100%',
+      objectFit: 'cover',
+      width: this.getSize(),
+      height: this.getSize(),
       position: 'relative',
     };
   }
@@ -38,7 +42,7 @@ class Picture extends React.Component {
       <div style={this.getContainterStyle()}
         className={'mh-picture ' + (this.props.className || '')}>
         <div style={this.getSquareStyle()}></div>
-        <div style={this.getImgStyle()} ></div>
+        <img style={this.getImgStyle()} src={this.props.src} />
       </div>
     );
   }

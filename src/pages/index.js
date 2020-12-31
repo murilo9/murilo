@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import * as React from 'react';
 import Landing from '../sections/Landing';
 import About from '../sections/About';
@@ -6,15 +7,19 @@ import Skills from '../sections/Skills';
 import Portfolio from '../sections/Portfolio';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import {Helmet} from 'react-helmet';
 class IndexPage extends React.Component {
-  componentDidMount() {
-    // Gambiarra pra amenizar o css não carregado a tempo
-    setTimeout(() => document.body.style.display = 'block', 500);
-  }
-
   render() {
     return (
       <main>
+        <Helmet>
+          <title>
+            Murilo Henrique | Desenvolvedor Web Fullstack
+          </title>
+          <meta name="author" content="Murilo Henrique"></meta>
+          <meta name="keywords" content="Murilo Henrique, desenvolvedor web, fullstack, programador, front-end, javascript"></meta>
+          <meta name="description" content="Desenvolvedor Web Fullstack JavaScript"></meta>
+        </Helmet>
         <Landing />
         <About />
         <Services />

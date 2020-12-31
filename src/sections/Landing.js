@@ -3,7 +3,6 @@ import * as React from 'react';
 import {Col, Container, Row} from 'react-bootstrap';
 import Picture from '../components/Picture';
 import SocialNetworks from '../components/SocialNetworks';
-import getPictureSize from '../helpers/PicSize';
 import '../styles/sections/Landing.scss';
 
 const landingTitle = 'Murilo Henrique, prazer ;)';
@@ -54,7 +53,7 @@ class LandingSection extends React.Component {
             <Col sm={4} className="d-flex justify-content-center align-items-end mt-5 mt-sm-0">
               {
                 this.state.renderPictures ?
-                <Picture src="murilo.png" size={getPictureSize(window)} id="landing-img"
+                <Picture src="murilo.png" id="landing-img"
                   color="green" top="12px" left="-12px" className="mb-2" /> :
                 null
               }

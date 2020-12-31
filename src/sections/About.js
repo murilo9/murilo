@@ -2,7 +2,6 @@
 import * as React from 'react';
 import {Col, Container, Row} from 'react-bootstrap';
 import Picture from '../components/Picture';
-import getPictureSize from '../helpers/PicSize';
 import '../styles/sections/About.scss';
 
 const links = {
@@ -36,10 +35,9 @@ class AboutSection extends React.Component {
               {
                 this.state.renderPictures ?
                 <React.Fragment>
-                  <Picture src="coder.jpg"
-                    size={getPictureSize(window)} color="blue" top="12px" left="-12px"/>
+                  <Picture src="coder.jpg" color="blue" top="12px" left="-12px"/>
                   <Picture src="robotica.jpg" className="ml-4 d-none d-md-block"
-                    size={getPictureSize(window)} color="green" top="-12px" left="12px"/>
+                    color="green" top="-12px" left="12px"/>
                 </React.Fragment> :
                 null
               }
