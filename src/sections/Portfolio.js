@@ -11,19 +11,24 @@ const projects = [
       <p>
         Aplicação desenvolvida durante minha atuação
         na <a href="https://yousendr.com/pt-br/" target="_blank" className="color-green">
-          YouSendr™</a>, o YouSendr Message
+          YouSendr</a>, o YouSendr Message
         é um complemento para o Google Planilhas para automação de disparo de mensagens.
         Os contatos da planilha são organizados dentro de um pipeline composto por fases, que
         podem ter mensagens personalizadas e realizar os disparos agendados para os canais
-        configurados (Email, SMS, Whatsapp e Telegram) de acordo com as regras estabelecidas
+        configurados (Email, SMS, WhatsApp e Telegram) de acordo com as regras estabelecidas
         (data, horário, dias da semana). Também é possível acompanhar em tempo real as interações
         (visualizações, cliques e respostas) que ocorrem nas mensagens, dentre inúmeras outras
         funcionalidades.
       </p>
       <p>
-        O front-end da aplicação foi feito em Vue com um layout personalizado construído
+        O front-end da aplicação foi feito em Vue.js com um layout personalizado construído
         utilizando o framework Element. O back-end da aplicação é híbrido, utilizando as
         funções do Google Planilhas escritas em Google App Script, e os serviços do Firebase.
+      </p>
+      <p>
+        Neste projeto eu entendi a importância de manter a integridade conceitual das novas
+        funcionalidades e de manter a qualidade nos processos de desenvolvimento, assumindo
+        um papel de Producto Owner e Quality Analyst.
       </p>
     </React.Fragment>,
     techs: [
@@ -41,15 +46,18 @@ const projects = [
   },
   {
     title: 'Mydria',
-    description: <p>
-      Mydria é uma rede social onde os usuários podem postar texto e imagens,
-      bem como seguir e reagir a posts de outros usuários. O front-end foi feito
-      em React usando o tema padrão do Bootstrap, além de uma cariação dark mode.
-      No back-end foi utilizada uma API REST feita em Node que faz autenticação
-      e fornece os serviços para a aplicação, interagindo com um banco de dados
-      MongoDB através do Mongoose ORM. A API Node é hospedada no Heroku. As imagens
-      são hospedadas no serviço de store do Firebase.
-    </p>,
+    description:
+    <React.Fragment>
+      <p>
+        Mydria é uma rede social onde os usuários podem postar texto e imagens,
+        bem como seguir e reagir a posts de outros usuários. O front-end foi feito
+        em React usando o tema padrão do Bootstrap, além de uma cariação dark mode.
+        No back-end foi utilizada uma API REST feita em Node que faz autenticação
+        e fornece os serviços para a aplicação, interagindo com um banco de dados
+        MongoDB através do Mongoose ORM. A API Node é hospedada no Heroku. As imagens
+        são hospedadas no serviço de store do Firebase.
+      </p>
+    </React.Fragment>,
     techs: [
       'React.js', 'Redux', 'Bootstrap', 'Node.js', 'MongoDB', 'Mongoose', 'Heroku', 'Firebase',
     ],
@@ -65,16 +73,24 @@ const projects = [
   },
   {
     title: 'Jevang',
-    description: <p>
-      Site de exposição de obras em desenvolvimento para a
-      pintora <a href="https://www.instagram.com/jevangart/" target="_blank" className="color-green">
-      Julia Evangelista</a>. Feito em
-      Nuxt utilizando o framework Vue Material. Design feito por mim. O site possui
-      um painel de administrador com layout padrão do Material Design. Os usuários podem
-      enviar mensagens que são visualizadas pelo administrador no painel. O back-end é
-      serverless, portanto o site se comunica diretamente com os serviços de autenticação
-      e storage do Firebase, e o hosting é feito no Heroku.
-    </p>,
+    description: <React.Fragment>
+      <p>
+        Site de exposição de obras em desenvolvimento para a artista
+        visual <a href="https://www.instagram.com/jevangart/" target="_blank" className="color-green">
+        Julia Evangelista</a>. Feito em
+        Nuxt utilizando o framework Material UI. Design base feito por mim, com modificações
+        realizadas a gosto do cliente. O site possui
+        um painel de administrador com layout padrão do Material Design. Os usuários podem
+        enviar mensagens que são visualizadas pelo administrador no painel. O back-end é
+        serverless, portanto o site se comunica diretamente com os serviços de autenticação
+        e storage do Firebase, e o hosting é feito no Heroku.
+      </p>
+      <p>
+        Neste projeto eu entendi o quão crucial a experiência de usuário (UX) é para o
+        design, e a importância de estabelecer uma boa relação com o usuário (baseada na empatia,
+        capacidade de escuta, feedback frequente e boa comunicação) durante todo andamento do projeto.
+      </p>
+    </React.Fragment>,
     techs: [
       'Vue.js', 'Nuxt.js', 'Firebase', 'Heroku', 'Material UI',
     ],
