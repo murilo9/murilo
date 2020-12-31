@@ -4,10 +4,10 @@ import {Col, Container, Row} from 'react-bootstrap';
 import '../styles/sections/Skills.scss';
 
 const skills = [
-  ['html5.svg', 'html5'], ['css3.svg', 'CSS3'], ['javascript.svg', 'Javascript'],
+  ['html5.svg', 'HTML5'], ['css3.svg', 'CSS3'], ['javascript.svg', 'JavaScript'],
   ['vue.svg', 'Vue.js'], ['react.svg', 'React.js'],
-  ['angular.svg', 'Angular'], ['node.svg', 'Node.js'], ['nuxt.svg', 'Nuxt.js'],
-  ['typescript.svg', 'Typescript'], ['redux.svg', 'Redux'], ['sass.svg', 'Sass'],
+  ['angular.svg', 'Angular'], ['node.svg', 'Node.js'], ['nuxt.svg', 'Nuxt'],
+  ['typescript.svg', 'TypeScript'], ['redux.svg', 'Redux'], ['sass.svg', 'Sass'],
   ['jquery.svg', 'jQuery'],
   ['mongodb.svg', 'MongoDB'], ['mysql.svg', 'MySQL'], ['firebase.svg', 'Firebase'],
   ['heroku.svg', 'Heroku'], ['webpack.svg', 'Webpack'], ['npm.svg', 'NPM Scripts'],
