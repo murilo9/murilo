@@ -24,6 +24,7 @@
     "gatsby": "^2.26.1",
     "gatsby-plugin-fontawesome-css": "^1.0.0",
     "gatsby-plugin-image": "^0.3.1",
+    "gatsby-plugin-manifest": "^2.9.1",
     "gatsby-plugin-react-helmet": "^3.6.0",
     "gatsby-plugin-sass": "^2.7.0",
     "gatsby-plugin-sharp": "^2.10.1",
