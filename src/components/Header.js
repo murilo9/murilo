@@ -17,9 +17,9 @@ class Header extends React.Component {
             </Col>
             <Col className="d-flex justify-content-between justify-content-sm-end" sm={4}>
               <div>
-                <FontAwesomeIcon icon={faCircle} className="available"/>
+                <FontAwesomeIcon icon={faCircle} className="unavailable"/>
                 <span className="ml-2">
-                Disponível para novos projetos
+                Não disponível para novos projetos
                 </span>
               </div>
               { /* TODO: mobile nav menu */}

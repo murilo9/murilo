@@ -69,6 +69,7 @@ const projects = [
     ],
     links: {
       repo: 'https://github.com/murilo9/mydria',
+      site: 'https://teste-784ee.web.app/',
     },
   },
   {

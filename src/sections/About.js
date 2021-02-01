@@ -9,6 +9,7 @@ const links = {
   positivo: 'https://www.up.edu.br',
   orbital: 'https://orbitaldev.com.br/',
   yousendr: 'http://yousendr.com/',
+  brbatel: 'https://brbatel.com.br/',
 };
 
 class AboutSection extends React.Component {
@@ -76,10 +77,12 @@ class AboutSection extends React.Component {
                   <p className="color-light-gray">
                     Fui estagiário como Desenvolvedor Web PHP
                     na <a href={links.orbital} className="color-blue" target="_blank">
-                    Orbital</a> e atualmente sou desenvolvedor web Fullstack
+                    Orbital</a>, trabalhei como Desenvolvedor Web
                     no <a href={links.yousendr} className="color-blue" target="_blank">
-                    YouSendr</a> - utilizando MVC, webpack, VueJS, Vuetify e Element no
-                    front-end e Google Apps Script no back-end.
+                    YouSendr</a> utilziando Vue.js, Node.js e Google App Script, e
+                    atualmente sou Desenvolvedor Web Fullstack
+                    na <a href={links.brbatel} className="color-blue" target="_blank">
+                    BrBatel</a> - utilizando React.js e Node.js.
                   </p>
                 </Col>
                 <Col sm={12} md={6} lg={12} className="d-flex flex-column">
